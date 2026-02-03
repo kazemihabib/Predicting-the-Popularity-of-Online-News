@@ -12,7 +12,7 @@ Following the approach from the original research paper ([Fernandes et al., 2015
 
 - **Binary Classification**: Articles with >1,400 shares = Popular (1), otherwise Unpopular (0)
 - **Rolling Window Validation**: Window size (W) = 10,000, Step size (L) = 1,000
-- **Train/Test Split**: 70% training, 30% testing within each window
+- **Train/Validation Split**: 70% training, 30% validation within each window
 - **Feature Engineering**: 58 predictive features with standardization (mean=0, std=1)
 - **Time-Series Approach**: Data sorted chronologically by `timedelta` for temporal validity
 
@@ -42,7 +42,7 @@ Following the approach from the original research paper ([Fernandes et al., 2015
 
 ### Prerequisites
 
-- Python 3.13
+- Python 3.11
 - Java 21
 
 ### Setup
